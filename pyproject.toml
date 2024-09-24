@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soft_label_learning"
+version = "1.0.0"
+authors = [
+  { name="Sjoerd de Vries", email="s.devries1@uu.nl" },
+]
+description = "This is a short description of the project"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies =[
+  'matplotlib~=3.8.2',
+  ]
+
+[project.optional-dependencies]
+dev = ["black", "ruff", "isort", "nbstripout", "jupyter", "austin-dist"]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+src = ["src"]
+select = [
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "C90",  # mccabe complexity
+    "I",  # isort
+]

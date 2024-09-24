@@ -1,0 +1,3 @@
+git+https://github.com/sjoerd-de-vries/SYNLABEL.git
+-e .
+ 
