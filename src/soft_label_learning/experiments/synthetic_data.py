@@ -522,7 +522,7 @@ def complete_experiment(
                                 else:
                                     repeated_results = Parallel(n_jobs=n_jobs)(
                                         delayed(conduct_experiment)(
-                                            D_G.X,
+                                            D_PG.X,
                                             D_G.y,
                                             D_PG.y,
                                             D_OS.y,
