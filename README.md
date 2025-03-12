@@ -4,6 +4,8 @@ This repository contains the code for the Soft Label Learning (SLL) package.
 
 The results accompanying this code are presented in the paper: "Learning with Confidence: Training Better Classifiers from Soft Labels" by Sjoerd de Vries and Dirk Thierens.
 
+This repository also contains the Online Supplementaries for the paper, in pdf format.
+
 ## Installation
 
 The virtual environment that was used to run this framework is specified in the requirements.txt, and mainly relies on the SYNLABEL package (https://github.com/sjoerd-de-vries/SYNLABEL) and its dependencies.
